@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>初恋时间雷火剑-作品介绍与观看指南专题页</title>
+<meta name="description" content="初恋时间雷火剑专题页，围绕初恋时间与雷火剑相关作品，整理剧情脉络、角色看点、观看顺序与常见问题，帮助读者快速了解这一动画内容。">
+<meta name="keywords" content="初恋时间雷火剑,初恋时间,雷火剑,动画作品,观看指南,角色介绍">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --bg:#0f1226;
+    --bg-soft:#161a35;
+    --card:#1c2143;
+    --card-2:#232a52;
+    --line:rgba(255,255,255,.08);
+    --text:#eef0ff;
+    --text-dim:#a9aed4;
+    --accent:#ff6b9d;
+    --accent-2:#7c6bff;
+    --accent-3:#4dd6c1;
+    --radius:16px;
+    --shadow:0 18px 40px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    background:
+      radial-gradient(1000px 600px at 12% -10%,rgba(124,107,255,.28),transparent 60%),
+      radial-gradient(900px 520px at 88% 0%,rgba(255,107,157,.22),transparent 60%),
+      var(--bg);
+    color:var(--text);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+
+  .wrap{width:min(1180px,92vw);margin:0 auto}
+
+  /* ---------- Header ---------- */
+  header.site-header{
+    position:sticky;top:0;z-index:50;
+    backdrop-filter:blur(14px);
+    background:rgba(15,18,38,.78);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:20px;padding:14px 0;
+  }
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand-mark{
+    width:42px;height:42px;border-radius:13px;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    display:grid;place-items:center;
+    font-weight:800;font-size:19px;color:#fff;
+    box-shadow:0 8px 20px rgba(255,107,157,.35);
+  }
+  .brand-text b{display:block;font-size:17px;letter-spacing:.5px}
+  .brand-text span{display:block;font-size:12px;color:var(--text-dim);letter-spacing:1.5px}
+
+  nav.main-nav{display:flex;gap:6px;flex-wrap:wrap}
+  nav.main-nav a{
+    padding:8px 14px;border-radius:999px;font-size:14px;color:var(--text-dim);
+    transition:.25s;
+  }
+  nav.main-nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+
+  .header-cta{
+    padding:9px 18px;border-radius:999px;font-size:14px;font-weight:600;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;
+    white-space:nowrap;box-shadow:0 8px 22px rgba(124,107,255,.35);
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{padding:70px 0 54px;position:relative;overflow:hidden}
+  .hero-grid{
+    display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;
+  }
+  .tag-line{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;color:var(--accent-3);
+    border:1px solid rgba(77,214,193,.35);
+    background:rgba(77,214,193,.08);
+    padding:6px 14px;border-radius:999px;margin-bottom:20px;
+  }
+  .tag-line i{width:7px;height:7px;border-radius:50%;background:var(--accent-3);display:block}
+  h1{
+    font-size:clamp(30px,4.4vw,50px);
+    line-height:1.22;letter-spacing:-.5px;margin-bottom:20px;
+  }
+  h1 em{
+    font-style:normal;
+    background:linear-gradient(120deg,var(--accent),var(--accent-2) 60%,var(--accent-3));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero p.lead{font-size:16px;color:var(--text-dim);max-width:620px;margin-bottom:28px}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-block;padding:12px 26px;border-radius:12px;font-size:15px;font-weight:600;
+    transition:.25s;border:1px solid transparent;
+  }
+  .btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;box-shadow:0 12px 26px rgba(255,107,157,.28)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(255,107,157,.4)}
+  .btn-ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.04)}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+
+  .hero-panel{
+    background:linear-gradient(160deg,var(--card-2),var(--card));
+    border:1px solid var(--line);border-radius:24px;padding:26px;
+    box-shadow:var(--shadow);
+  }
+  .hero-panel h3{font-size:15px;color:var(--text-dim);font-weight:600;margin-bottom:16px;letter-spacing:1px}
+  .fact-list{list-style:none;display:grid;gap:14px}
+  .fact-list li{
+    display:flex;justify-content:space-between;gap:16px;
+    padding-bottom:12px;border-bottom:1px dashed var(--line);font-size:14px;
+  }
+  .fact-list li:last-child{border-bottom:none;padding-bottom:0}
+  .fact-list span:first-child{color:var(--text-dim)}
+  .fact-list span:last-child{color:#fff;font-weight:600;text-align:right}
+
+  /* ---------- Section base ---------- */
+  section{padding:62px 0}
+  .sec-head{margin-bottom:34px;max-width:760px}
+  .sec-head .eyebrow{
+    font-size:13px;letter-spacing:2px;color:var(--accent);
+    text-transform:uppercase;font-weight:700;margin-bottom:10px;
+  }
+  .sec-head h2{font-size:clamp(23px,2.8vw,32px);line-height:1.3;margin-bottom:12px}
+  .sec-head p{color:var(--text-dim);font-size:15px}
+
+  /* ---------- Story / intro ---------- */
+  .intro-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:34px;align-items:start}
+  .prose p{margin-bottom:16px;color:#d6d9f2;font-size:15.5px}
+  .prose p:last-child{margin-bottom:0}
+  .prose strong{color:#fff}
+  .highlight-box{
+    background:linear-gradient(150deg,rgba(124,107,255,.18),rgba(255,107,157,.12));
+    border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px;font-size:14.5px;color:#d9dcf7;
+  }
+  .highlight-box h3{font-size:16px;margin-bottom:12px;color:#fff}
+  .highlight-box ul{list-style:none;display:grid;gap:10px}
+  .highlight-box li{padding-left:20px;position:relative}
+  .highlight-box li::before{
+    content:"";position:absolute;left:0;top:10px;
+    width:8px;height:8px;border-radius:3px;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  }
+
+  /* ---------- Character cards ---------- */
+  .char-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;
+  }
+  .char-card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px;transition:.3s;position:relative;overflow:hidden;
+  }
+  .char-card::after{
+    content:"";position:absolute;inset:0;border-radius:var(--radius);
+    background:linear-gradient(140deg,rgba(255,107,157,.14),transparent 55%);
+    opacity:0;transition:.3s;
+  }
+  .char-card:hover{transform:translateY(-6px);border-color:rgba(255,107,157,.4)}
+  .char-card:hover::after{opacity:1}
+  .char-avatar{
+    width:54px;height:54px;border-radius:16px;display:grid;place-items:center;
+    font-size:20px;font-weight:800;color:#fff;margin-bottom:16px;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  }
+  .char-card h3{font-size:17px;margin-bottom:6px;position:relative;z-index:1}
+  .char-role{font-size:12.5px;color:var(--accent-3);letter-spacing:1px;margin-bottom:12px;position:relative;z-index:1}
+  .char-card p{font-size:14px;color:var(--text-dim);position:relative;z-index:1}
+
+  /* ---------- Watch order / steps ---------- */
+  .steps{display:grid;gap:16px}
+  .step{
+    display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:start;
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 24px;transition:.25s;
+  }
+  .step:hover{background:var(--card-2);border-color:rgba(124,107,255,.4)}
+  .step-num{
+    width:48px;height:48px;border-radius:14px;display:grid;place-items:center;
+    font-weight:800;font-size:18px;color:#fff;
+    background:linear-gradient(135deg,var(--accent-2),var(--accent-3));
+  }
+  .step h3{font-size:16.5px;margin-bottom:8px}
+  .step p{font-size:14.5px;color:var(--text-dim)}
+
+  /* ---------- Themes ---------- */
+  .theme-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+  .theme-card{
+    background:linear-gradient(160deg,var(--card-2),var(--card));
+    border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px;transition:.3s;
+  }
+  .theme-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+  .theme-icon{
+    font-size:22px;width:46px;height:46px;border-radius:13px;
+    display:grid;place-items:center;margin-bottom:16px;
+    background:rgba(255,107,157,.14);color:var(--accent);
+  }
+  .theme-card h3{font-size:16px;margin-bottom:10px}
+  .theme-card p{font-size:14px;color:var(--text-dim)}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{display:grid;gap:14px}
+  details.faq{
+    background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:18px 22px;transition:.25s;
+  }
+  details.faq[open]{background:var(--card-2);border-color:rgba(255,107,157,.35)}
+  details.faq summary{
+    cursor:pointer;font-size:15.5px;font-weight:600;list-style:none;
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+  }
+  details.faq summary::-webkit-details-marker{display:none}
+  details.faq summary::after{
+    content:"+";font-size:20px;color:var(--accent);font-weight:400;
+    transition:.25s;line-height:1;
+  }
+  details.faq[open] summary::after{content:"−"}
+  details.faq p{margin-top:12px;font-size:14.5px;color:var(--text-dim)}
+
+  /* ---------- Notes ---------- */
+  .notice{
+    background:rgba(77,214,193,.07);border:1px solid rgba(77,214,193,.28);
+    border-left:4px solid var(--accent-3);
+    border-radius:12px;padding:20px 24px;font-size:14.5px;color:#cfe9e4;
+  }
+  .notice strong{color:#fff}
+
+  /* ---------- Footer ---------- */
+  footer.site-footer{
+    border-top:1px solid var(--line);
+    background:rgba(10,12,26,.7);
+    padding:46px 0 30px;margin-top:20px;
+  }
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;margin-bottom:32px}
+  .footer-grid h4{font-size:15px;margin-bottom:14px;color:#fff}
+  .footer-grid p,.footer-grid a{font-size:14px;color:var(--text-dim)}
+  .footer-grid a{display:block;margin-bottom:9px;transition:.2s}
+  .footer-grid a:hover{color:var(--accent)}
+  .footer-bottom{
+    border-top:1px solid var(--line);padding-top:22px;
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    font-size:13px;color:var(--text-dim);
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:960px){
+    .hero-grid{grid-template-columns:1fr;gap:34px}
+    .intro-grid{grid-template-columns:1fr}
+    .footer-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:680px){
+    .header-inner{flex-wrap:wrap;gap:12px}
+    nav.main-nav{order:3;width:100%;overflow-x:auto;padding-bottom:4px}
+    nav.main-nav a{padding:7px 12px;font-size:13px;white-space:nowrap}
+    .header-cta{display:none}
+    .hero{padding:46px 0 36px}
+    section{padding:46px 0}
+    .step{grid-template-columns:1fr;gap:14px}
+    .step-num{width:42px;height:42px;font-size:16px}
+    .footer-grid{grid-template-columns:1fr;gap:26px}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <div class="brand-mark">初</div>
+      <div class="brand-text">
+        <b>初恋时间雷火剑</b>
+        <span>作品专题 · 观看指南</span>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="#intro">作品概览</a>
+      <a href="#characters">角色看点</a>
+      <a href="#order">观看顺序</a>
+      <a href="#themes">主题解析</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="header-cta" href="#intro">开始了解</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="tag-line"><i></i>动画作品 · 专题整理</div>
+        <h1>初恋时间雷火剑：<em>剧情脉络与观看要点</em>一次看懂</h1>
+        <p class="lead">
+          很多读者在搜索“初恋时间雷火剑”时，想弄清楚的是它属于哪一类作品、讲了什么故事、角色之间是什么关系、
+          以及应该按什么顺序去看。本页把与这一关键词相关的作品信息、角色结构、主题线索和常见疑问做了系统梳理，
+          方便你在正式观看前先建立整体印象。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#intro">查看作品概览</a>
+          <a class="btn btn-ghost" href="#faq">先看常见问题</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel">
+        <h3>快速信息卡</h3>
+        <ul class="fact-list">
+          <li><span>关键词</span><span>初恋时间雷火剑</span></li>
+          <li><span>内容类型</span><span>动画 / 剧情向</span></li>
+          <li><span>核心线索</span><span>青春 · 情感 · 冲突</span></li>
+          <li><span>适合人群</span><span>喜欢剧情与角色刻画者</span></li>
+          <li><span>观看建议</span><span>按顺序、留意伏笔</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section id="intro">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">作品概览</div>
+        <h2>“初恋时间雷火剑”到底指什么</h2>
+        <p>先把关键词拆开理解，再谈作品本身，能避免很多搜索时的困惑。</p>
+      </div>
+
+      <div class="intro-grid">
+        <div class="prose">
+          <p>
+            在中文网络语境里，<strong>“初恋时间雷火剑”</strong>通常是把两个信息点连在一起使用的搜索词：
+            一部分指向“初恋时间”所代表的青春情感题材，另一部分则与“雷火剑”这一标识性称呼相关。
+            由于不同平台对作品的命名、分集方式和译名并不统一，读者常常会看到几种相近写法，
+            但它们指向的内容主题大体一致——围绕少年少女之间初次萌发的情感，以及由此展开的冲突与选择。
+          </p>
+          <p>
+            从叙事结构上看，这类作品往往不会只停留在“甜”的层面。它更常见的手法是：
+            用一段看似轻盈的相遇作为起点，再逐步引入家庭、成长环境、性格差异等现实因素，
+            让角色在情感与自我认知之间反复拉扯。这也是它比一般短篇恋爱故事更有讨论度的原因。
+          </p>
+          <p>
+            如果你只是想知道“值不值得看”，可以先判断自己的偏好：喜欢节奏明快、冲突强烈的观众，
+            可能会被其中的转折吸引；而偏好细腻日常、慢热描写的观众，则需要给它更多耐心。
+            两种观看方式都没有问题，关键是先对齐预期。
+          </p>
+          <p>
+            需要说明的是，不同来源对具体情节、角色设定和版本信息的描述可能存在差异。
+            本页整理的是围绕该关键词的通用理解框架与观看思路，
+            具体细节请以你实际观看的版本内容为准。
+          </p>
+        </div>
+
+        <aside class="highlight-box">
+          <h3>理解这个关键词的三个角度</h3>
+          <ul>
+            <li><strong>题材角度：</strong>青春情感为主线，带有成长与选择议题。</li>
+            <li><strong>角色角度：</strong>以少数核心人物为支点，关系网相对集中。</li>
+            <li><strong>观看角度：</strong>顺序与伏笔比“跳着看”更能体会完整结构。</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Characters -->
+  <section id="characters">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">角色看点</div>
+        <h2>推动故事的四类角色位置</h2>
+        <p>不涉及具体剧透，只从功能定位上说明每个角色在故事里承担什么。</p>
+      </div>
+
+      <div class="char-grid">
+        <article class="char-card">
+          <div class="char-avatar">主</div>
+          <h3>情感起点型角色</h3>
+          <div class="char-role">STORY STARTER</div>
+          <p>故事的触发者。往往带着某种未说出口的心意，推动关系从“陌生”走向“在意”，也是观众代入感最强的位置。</p>
+        </article>
+
+        <article class="char-card">
+          <div class="char-avatar">对</div>
+          <h3>关系回应型角色</h3>
+          <div class="char-role">COUNTERPART</div>
+          <p>与起点型角色形成对照。性格、处境或表达方式常常相反，两人的差异本身就是剧情张力的来源。</p>
+        </article>
+
+        <article class="char-card">
+          <div class="char-avatar">镜</div>
+          <h3>旁观映照型角色</h3>
+          <div class="char-role">MIRROR</div>
+          <p>不一定处于情感中心，但通过他们的选择，观众能更清楚地看到主角的犹豫与成长，起到映照作用。</p>
+        </article>
+
+        <article class="char-card">
+          <div class="char-avatar">推</div>
+          <h3>环境推动型角色</h3>
+          <div class="char-role">CATALYST</div>
+          <p>可能是家人、同伴或老师一类的存在，不直接参与情感线，却不断改变角色所处的环境与压力。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Watch order -->
+  <section id="order">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">观看顺序</div>
+        <h2>怎样看才能不漏掉关键信息</h2>
+        <p>面对分集或版本不统一的作品，按下面四步走通常最稳妥。</p>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <div class="step-num">01</div>
+          <div>
+            <h3>先确认版本与集数</h3>
+            <p>不同平台可能对同一作品使用不同标题或拆分方式。开始前先确认自己看的是完整版本，避免因为缺集导致剧情断层。</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-num">02</div>
+          <div>
+            <h3>按正常顺序推进，不要跳集</h3>
+            <p>这类作品的情感铺垫往往藏在细节里。跳过看似平淡的段落，后面角色态度的转变就会显得突兀。</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-num">03</div>
+          <div>
+            <h3>留意重复出现的意象与台词</h3>
+            <p>时间、季节、某个固定场景或一句反复出现的话，通常是理解角色心理变化的关键线索，值得多留意。</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-num">04</div>
+          <div>
+            <h3>看完后再回看开头</h3>
+            <p>很多作品会把答案藏在第一集。完整看完后回头重看开头，往往能发现第一次观看时忽略的呼应。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Themes -->
+  <section id="themes">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">主题解析</div>
+        <h2>作品反复讨论的四个方向</h2>
+        <p>理解这些主题，比记住具体情节更能帮你把握整体基调。</p>
+      </div>
+
+      <div class="theme-grid">
+        <article class="theme-card">
+          <div class="theme-icon">时</div>
+          <h3>时间与错过</h3>
+          <p>“时间”在标题中往往不只是背景设定，而是叙事装置——它决定了角色能否说出口，也决定了遗憾的形态。</p>
+        </article>
+
+        <article class="theme-card">
+          <div class="theme-icon">初</div>
+          <h3>初次与不成熟</h3>
+          <p>初次动心的笨拙、误判和冲动，是这类作品最真实的部分。它不美化不成熟，而是呈现其代价。</p>
+        </article>
+
+        <article class="theme-card">
+          <div class="theme-icon">选</div>
+          <h3>选择与代价</h3>
+          <p>角色几乎都会面临某种取舍。作品的重点通常不在于选对或选错，而在于选择之后如何承担。</p>
+        </article>
+
+        <article class="theme-card">
+          <div class="theme-icon">我</div>
+          <h3>自我认知的建立</h3>
+          <p>情感线之下，往往还有一条更隐蔽的成长线：角色如何从他人的目光中，慢慢确认自己是谁。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">常见问题</div>
+        <h2>搜索“初恋时间雷火剑”时最常问的几件事</h2>
+        <p>以下回答基于通用理解整理，具体内容请以实际观看版本为准。</p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq" open>
+          <summary>“初恋时间雷火剑”是一个作品的完整名称吗？</summary>
+          <p>它更像是网络搜索中形成的组合关键词，把题材信息与标识性称呼连在一起使用。不同平台对作品的正式命名可能不同，所以看到相近写法时，不必急于判断是不同作品。</p>
+        </details>
+
+        <details class="faq">
+          <summary>没有看过同类作品，能直接看吗？</summary>
+          <p>可以。这类作品通常不依赖前作知识，但节奏偏慢、情感铺垫较多，建议至少连续看两到三集再决定是否继续，单看开头容易低估它的结构。</p>
+        </details>
+
+        <details class="faq">
+          <summary>适合什么年龄段观看？</summary>
+          <p>整体属于青春情感题材，但不同版本在表现尺度上可能存在差异。建议根据所在平台的分级提示以及自身接受程度来判断，未成年观众可先参考平台标注。</p>
+        </details>
+
+        <details class="faq">
+          <summary>为什么不同人描述的剧情差别很大？</summary>
+          <p>原因通常有三个：版本不同、译名不同、以及观众关注的线索不同。有人聚焦情感线，有人关注成长线，描述自然会有差异，这并不一定意味着内容矛盾。</p>
+        </details>
+
+        <details class="faq">
+          <summary>看完之后想进一步了解，应该从哪里入手？</summary>
+          <p>可以优先回看关键转折段落，再对照角色关系梳理动机。如果想找讨论，建议选择氛围理性、以剧情分析为主的社区，避免被过度情绪化的评价影响判断。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notice -->
+  <section>
+    <div class="wrap">
+      <div class="notice">
+        <strong>观看提示：</strong>
+        请通过正规、合法的渠道观看相关内容，并留意所在平台的内容分级与提示信息。
+        本页仅提供围绕关键词的题材理解、结构梳理与观看思路，不提供任何资源下载或跳转服务。
+        若你看到的版本与本文描述存在差异，请以实际内容为准。
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>关于本专题</h4>
+        <p>围绕“初恋时间雷火剑”这一搜索关键词，整理作品题材、角色结构、观看顺序与主题线索，帮助读者在观看前建立清晰的整体认知。</p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <a href="#intro">作品概览</a>
+        <a href="#characters">角色看点</a>
+        <a href="#order">观看顺序</a>
+        <a href="#themes">主题解析</a>
+      </div>
+      <div>
+        <h4>相关阅读</h4>
+        <a href="#faq">常见问题解答</a>
+        <a href="#order">分集观看建议</a>
+        <a href="#themes">剧情主题梳理</a>
+        <a href="#intro">关键词含义说明</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>初恋时间雷火剑 · 作品专题页</span>
+      <span>内容仅供了解与参考，请以实际观看版本为准</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+        </html>
