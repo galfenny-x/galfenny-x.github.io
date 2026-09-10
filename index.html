@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>金狮集团-多元化产业布局与企业信息概览</title>
+<meta name="description" content="金狮集团企业信息概览，了解集团业务板块、产业布局、发展理念、社会责任与合作联系等公开信息。">
+<meta name="keywords" content="金狮集团,金狮集团简介,金狮集团业务,集团产业布局,企业发展">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --ink:#1c2331;
+    --ink-soft:#46506a;
+    --gold:#b8862f;
+    --gold-deep:#8f6620;
+    --gold-tint:#f6efdf;
+    --line:#e3e0d8;
+    --bg:#fbfaf7;
+    --white:#ffffff;
+    --radius:10px;
+    --shadow:0 6px 22px rgba(28,35,49,.07);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Helvetica Neue","PingFang SC","Microsoft YaHei",Arial,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.75;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px;}
+
+  /* ---------- 顶部 ---------- */
+  .topbar{
+    background:var(--ink);
+    color:#cfd4e0;
+    font-size:13px;
+    letter-spacing:.4px;
+  }
+  .topbar .wrap{
+    display:flex;justify-content:space-between;align-items:center;
+    min-height:38px;gap:16px;flex-wrap:wrap;
+  }
+  .topbar span{white-space:nowrap;}
+
+  header.site-header{
+    background:var(--white);
+    border-bottom:1px solid var(--line);
+    position:sticky;top:0;z-index:50;
+  }
+  .header-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:24px;min-height:76px;flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand-mark{
+    width:44px;height:44px;border-radius:8px;
+    background:linear-gradient(140deg,var(--gold) 0%,var(--gold-deep) 100%);
+    color:#fff;font-weight:700;font-size:20px;
+    display:flex;align-items:center;justify-content:center;
+    letter-spacing:1px;flex-shrink:0;
+  }
+  .brand-text b{display:block;font-size:19px;letter-spacing:2px;}
+  .brand-text small{display:block;font-size:11px;color:var(--ink-soft);letter-spacing:1.6px;text-transform:uppercase;}
+
+  nav.main-nav ul{
+    list-style:none;display:flex;gap:6px;flex-wrap:wrap;
+  }
+  nav.main-nav a{
+    display:block;padding:8px 14px;border-radius:6px;
+    font-size:15px;color:var(--ink-soft);transition:.2s;
+  }
+  nav.main-nav a:hover,nav.main-nav a:focus{background:var(--gold-tint);color:var(--gold-deep);}
+
+  /* ---------- 首屏 ---------- */
+  .hero{
+    background:
+      radial-gradient(1000px 380px at 85% -10%,rgba(184,134,47,.18),transparent 65%),
+      linear-gradient(180deg,#ffffff 0%,#f7f4ec 100%);
+    border-bottom:1px solid var(--line);
+    padding:64px 0 58px;
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center;
+  }
+  .hero h1{
+    font-size:38px;line-height:1.3;letter-spacing:1px;margin-bottom:18px;
+  }
+  .hero h1 em{
+    font-style:normal;color:var(--gold-deep);
+    border-bottom:3px solid rgba(184,134,47,.35);
+  }
+  .hero p.lead{
+    color:var(--ink-soft);font-size:16.5px;max-width:600px;margin-bottom:26px;
+  }
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:12px 26px;border-radius:8px;
+    font-size:15px;font-weight:600;letter-spacing:.5px;transition:.2s;cursor:pointer;
+    border:1px solid transparent;
+  }
+  .btn-primary{background:var(--gold-deep);color:#fff;}
+  .btn-primary:hover{background:#75521a;}
+  .btn-ghost{background:#fff;color:var(--ink);border-color:var(--line);}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold-deep);}
+
+  .hero-facts{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:26px 26px 20px;
+  }
+  .hero-facts h2{
+    font-size:15px;letter-spacing:1.5px;color:var(--gold-deep);
+    margin-bottom:16px;font-weight:700;
+  }
+  .hero-facts dl{display:grid;grid-template-columns:auto 1fr;gap:12px 16px;font-size:14.5px;}
+  .hero-facts dt{color:var(--ink-soft);white-space:nowrap;}
+  .hero-facts dd{color:var(--ink);font-weight:600;}
+  .hero-facts .note{
+    margin-top:18px;padding-top:14px;border-top:1px dashed var(--line);
+    font-size:13px;color:var(--ink-soft);
+  }
+
+  /* ---------- 通用区块 ---------- */
+  section{padding:62px 0;}
+  section.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .sec-head{margin-bottom:34px;max-width:760px;}
+  .sec-head .kicker{
+    display:inline-block;font-size:12.5px;letter-spacing:2.4px;
+    color:var(--gold-deep);font-weight:700;margin-bottom:10px;
+  }
+  .sec-head h2{font-size:27px;letter-spacing:.6px;line-height:1.4;margin-bottom:12px;}
+  .sec-head p{color:var(--ink-soft);font-size:15.5px;}
+
+  /* ---------- 业务板块 ---------- */
+  .biz-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+  }
+  .biz-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px 24px;box-shadow:var(--shadow);transition:.25s;
+    display:flex;flex-direction:column;gap:12px;
+  }
+  .biz-card:hover{transform:translateY(-4px);border-color:rgba(184,134,47,.5);}
+  .biz-card .num{
+    font-size:13px;font-weight:700;letter-spacing:1.5px;color:var(--gold);
+  }
+  .biz-card h3{font-size:18.5px;letter-spacing:.5px;}
+  .biz-card p{font-size:14.8px;color:var(--ink-soft);}
+  .biz-card ul{list-style:none;font-size:14px;color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;}
+  .biz-card ul li{
+    background:var(--gold-tint);color:var(--gold-deep);
+    padding:3px 10px;border-radius:20px;font-size:12.5px;
+  }
+
+  /* ---------- 理念 ---------- */
+  .values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .value-item{
+    border-left:3px solid var(--gold);
+    padding:4px 0 4px 20px;
+  }
+  .value-item h3{font-size:17px;margin-bottom:8px;}
+  .value-item p{font-size:14.8px;color:var(--ink-soft);}
+
+  /* ---------- 发展脉络 ---------- */
+  .timeline{position:relative;padding-left:26px;}
+  .timeline::before{
+    content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;
+    background:linear-gradient(180deg,var(--gold),#e8e2d4);
+  }
+  .tl-item{position:relative;padding:0 0 30px 22px;}
+  .tl-item::before{
+    content:"";position:absolute;left:-26px;top:8px;
+    width:12px;height:12px;border-radius:50%;
+    background:#fff;border:3px solid var(--gold);
+  }
+  .tl-item h3{font-size:16.5px;margin-bottom:6px;}
+  .tl-item p{font-size:14.6px;color:var(--ink-soft);}
+
+  /* ---------- 责任 ---------- */
+  .csr-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .csr-card{
+    background:linear-gradient(160deg,#fff 0%,#faf7f0 100%);
+    border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 24px;
+  }
+  .csr-card h3{font-size:17.5px;margin-bottom:10px;}
+  .csr-card p{font-size:14.8px;color:var(--ink-soft);}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{display:flex;flex-direction:column;gap:14px;max-width:880px;}
+  details.faq{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:18px 22px;transition:.2s;
+  }
+  details.faq[open]{border-color:rgba(184,134,47,.55);box-shadow:var(--shadow);}
+  details.faq summary{
+    cursor:pointer;font-size:16px;font-weight:600;list-style:none;
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+  }
+  details.faq summary::-webkit-details-marker{display:none;}
+  details.faq summary::after{
+    content:"+";color:var(--gold-deep);font-size:20px;font-weight:400;line-height:1;
+  }
+  details.faq[open] summary::after{content:"–";}
+  details.faq p{
+    margin-top:12px;font-size:14.8px;color:var(--ink-soft);
+    padding-top:12px;border-top:1px dashed var(--line);
+  }
+
+  /* ---------- 联系 ---------- */
+  .contact-band{
+    background:var(--ink);color:#dfe3ec;border-radius:14px;
+    padding:44px 40px;display:grid;grid-template-columns:1.2fr .8fr;
+    gap:36px;align-items:center;
+  }
+  .contact-band h2{font-size:24px;color:#fff;margin-bottom:12px;letter-spacing:.6px;}
+  .contact-band p{font-size:15px;color:#b9c0d0;}
+  .contact-list{list-style:none;font-size:14.6px;display:flex;flex-direction:column;gap:12px;}
+  .contact-list li{display:flex;gap:10px;align-items:flex-start;}
+  .contact-list b{color:var(--gold);font-weight:600;min-width:64px;display:inline-block;}
+
+  /* ---------- 页脚 ---------- */
+  footer.site-footer{
+    background:#151b26;color:#98a1b3;font-size:14px;padding:48px 0 26px;margin-top:0;
+  }
+  .footer-grid{
+    display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;
+    padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.09);
+  }
+  .footer-grid h4{color:#fff;font-size:15px;margin-bottom:14px;letter-spacing:.8px;}
+  .footer-grid ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
+  .footer-grid a:hover{color:var(--gold);}
+  .footer-brand p{font-size:13.6px;line-height:1.8;color:#8b95a8;margin-top:12px;max-width:300px;}
+  .footer-bottom{
+    padding-top:20px;display:flex;justify-content:space-between;gap:16px;
+    flex-wrap:wrap;font-size:13px;color:#7c8699;
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:980px){
+    .hero-grid{grid-template-columns:1fr;gap:34px;}
+    .biz-grid{grid-template-columns:repeat(2,1fr);}
+    .values-grid{grid-template-columns:1fr;}
+    .contact-band{grid-template-columns:1fr;padding:34px 26px;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:640px){
+    body{font-size:15.4px;}
+    .hero{padding:44px 0 40px;}
+    .hero h1{font-size:27px;}
+    section{padding:46px 0;}
+    .sec-head h2{font-size:22px;}
+    .biz-grid{grid-template-columns:1fr;}
+    .csr-grid{grid-template-columns:1fr;}
+    .header-inner{min-height:auto;padding:12px 0;}
+    nav.main-nav ul{gap:2px;}
+    nav.main-nav a{padding:6px 10px;font-size:14px;}
+    .footer-grid{grid-template-columns:1fr;gap:26px;}
+    .topbar .wrap{justify-content:center;text-align:center;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>金狮集团 · 企业信息概览</span>
+    <span>业务布局 · 发展理念 · 社会责任 · 合作联系</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <div class="brand-mark">狮</div>
+      <div class="brand-text">
+        <b>金狮集团</b>
+        <small>Golden Lion Group</small>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#about">集团概况</a></li>
+        <li><a href="#business">业务板块</a></li>
+        <li><a href="#values">发展理念</a></li>
+        <li><a href="#history">发展脉络</a></li>
+        <li><a href="#csr">社会责任</a></li>
+        <li><a href="#faq">常见问题</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero" id="about">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>金狮集团：以多元产业协同，<em>稳健经营与长期发展</em></h1>
+        <p class="lead">
+          金狮集团是一家以多元化产业布局为特征的企业集团。围绕实业经营与产业协同，
+          集团在多个业务方向上持续投入，通过规范治理、稳健经营与开放合作，
+          为合作伙伴、员工与社会创造长期价值。本页汇总集团概况、业务板块、
+          发展理念与合作联系等公开信息，便于访客快速了解集团整体情况。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#business">查看业务板块</a>
+          <a class="btn btn-ghost" href="#contact">合作与联系</a>
+        </div>
+      </div>
+
+      <aside class="hero-facts" aria-label="集团要点">
+        <h2>集团要点速览</h2>
+        <dl>
+          <dt>企业性质</dt>
+          <dd>多元化产业集团</dd>
+          <dt>经营方向</dt>
+          <dd>实业经营与产业协同</dd>
+          <dt>组织特征</dt>
+          <dd>集团化、多板块并行</dd>
+          <dt>合作方式</dt>
+          <dd>业务对接与长期合作</dd>
+          <dt>关注重点</dt>
+          <dd>规范治理 · 稳健经营</dd>
+        </dl>
+        <p class="note">
+          说明：本页内容为企业信息层面的通用介绍，具体经营数据、
+          资质与项目信息请以集团正式发布或官方对接渠道确认为准。
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 业务板块 -->
+  <section id="business">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">BUSINESS</span>
+        <h2>业务板块与产业布局</h2>
+        <p>
+          集团型企业通常通过多个业务板块协同运作，分散单一行业的周期波动，
+          并在资源、渠道与管理经验上形成互补。以下为常见的业务方向划分方式，
+          便于从结构上理解金狮集团这类多元化集团的运作逻辑。
+        </p>
+      </div>
+
+      <div class="biz-grid">
+        <article class="biz-card">
+          <span class="num">01</span>
+          <h3>实业制造与生产</h3>
+          <p>
+            以生产制造为核心的实业板块，关注产能稳定、质量管控与供应链效率，
+            是集团经营的基本盘，也是其他业务拓展的支撑基础。
+          </p>
+          <ul>
+            <li>生产运营</li>
+            <li>质量管理</li>
+            <li>供应链</li>
+          </ul>
+        </article>
+
+        <article class="biz-card">
+          <span class="num">02</span>
+          <h3>商贸与渠道服务</h3>
+          <p>
+            围绕产品流通与市场渠道展开的业务，强调渠道覆盖、客户服务与库存周转，
+            与实业板块形成上下游衔接。
+          </p>
+          <ul>
+            <li>渠道网络</li>
+            <li>客户服务</li>
+            <li>物流协同</li>
+          </ul>
+        </article>
+
+        <article class="biz-card">
+          <span class="num">03</span>
+          <h3>投资与产业协同</h3>
+          <p>
+            通过投资与资源整合参与有成长性的产业方向，注重风险控制与
+            长期回报，为集团整体布局提供弹性。
+          </p>
+          <ul>
+            <li>资源整合</li>
+            <li>风险控制</li>
+            <li>长期布局</li>
+          </ul>
+        </article>
+
+        <article class="biz-card">
+          <span class="num">04</span>
+          <h3>技术与数字化支持</h3>
+          <p>
+            以信息化与数字化手段提升管理效率，覆盖数据管理、流程优化与
+            业务系统的日常运维支持。
+          </p>
+          <ul>
+            <li>流程优化</li>
+            <li>数据管理</li>
+            <li>系统运维</li>
+          </ul>
+        </article>
+
+        <article class="biz-card">
+          <span class="num">05</span>
+          <h3>服务与运营管理</h3>
+          <p>
+            面向业务场景提供运营与服务支持，包括日常运营管理、客户关系维护
+            以及配套的服务体系建设。
+          </p>
+          <ul>
+            <li>运营管理</li>
+            <li>客户关系</li>
+            <li>服务体系</li>
+          </ul>
+        </article>
+
+        <article class="biz-card">
+          <span class="num">06</span>
+          <h3>人才与组织建设</h3>
+          <p>
+            集团化运作依赖稳定的组织能力，涵盖人才培养、岗位体系建设与
+            内部管理机制的持续完善。
+          </p>
+          <ul>
+            <li>人才培养</li>
+            <li>组织机制</li>
+            <li>内部管理</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 发展理念 -->
+  <section class="alt" id="values">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">PHILOSOPHY</span>
+        <h2>发展理念与经营原则</h2>
+        <p>
+          对多元化集团而言，理念决定边界，原则决定节奏。以下三点是理解
+          集团长期经营思路的关键维度。
+        </p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-item">
+          <h3>稳健优先</h3>
+          <p>
+            在业务扩张与风险控制之间保持平衡，不追求短期规模冲刺，
+            更看重现金流的稳定与经营的可持续性。
+          </p>
+        </div>
+        <div class="value-item">
+          <h3>协同互补</h3>
+          <p>
+            各板块之间在资源、渠道与管理经验上相互支持，避免重复投入，
+            让集团整体效率高于单一业务之和。
+          </p>
+        </div>
+        <div class="value-item">
+          <h3>合规与责任</h3>
+          <p>
+            遵守经营所在地的法律法规与商业惯例，重视员工权益、
+            合作方利益与社会责任，维护长期信誉。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 发展脉络 -->
+  <section id="history">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">MILESTONES</span>
+        <h2>集团发展的常见阶段</h2>
+        <p>
+          多元化集团的发展路径通常呈现阶段性特征。以下为一般性的阶段描述，
+          用于帮助理解集团从起步到成熟的组织演进过程。
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <h3>起步阶段：聚焦单一业务</h3>
+          <p>
+            以某一具体业务切入市场，积累客户、渠道与生产经验，
+            形成稳定的经营基础与管理团队。
+          </p>
+        </div>
+        <div class="tl-item">
+          <h3>扩展阶段：业务横向延伸</h3>
+          <p>
+            在原有业务基础上向相关领域延伸，通过上下游衔接或相邻行业
+            拓展，逐步形成多业务并行格局。
+          </p>
+        </div>
+        <div class="tl-item">
+          <h3>集团化阶段：组织与治理升级</h3>
+          <p>
+            随着业务数量增加，建立集团层面的管理架构、决策机制与
+            内部协同规则，提升整体运营效率。
+          </p>
+        </div>
+        <div class="tl-item">
+          <h3>成熟阶段：协同与长期经营</h3>
+          <p>
+            各板块进入稳定运营期，重点转向资源整合、风险控制与
+            长期价值创造，同时加强社会责任与品牌建设。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 社会责任 -->
+  <section class="alt" id="csr">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">RESPONSIBILITY</span>
+        <h2>社会责任与可持续发展</h2>
+        <p>
+          企业社会责任并非额外负担，而是长期经营的一部分。集团型企业
+          通常在以下方面持续投入。
+        </p>
+      </div>
+
+      <div class="csr-grid">
+        <article class="csr-card">
+          <h3>员工发展</h3>
+          <p>
+            提供相对稳定的工作环境与职业发展通道，重视安全生产与
+            员工合法权益，通过培训与岗位实践提升团队能力。
+          </p>
+        </article>
+        <article class="csr-card">
+          <h3>合作方共赢</h3>
+          <p>
+            与供应商、渠道商及合作伙伴保持透明、规范的商业往来，
+            按约定履行合同义务，共同维护健康的产业生态。
+          </p>
+        </article>
+        <article class="csr-card">
+          <h3>环境与资源</h3>
+          <p>
+            在生产与运营环节关注能耗与排放管理，推进节能降耗与
+            资源循环利用，减少业务活动对环境的影响。
+          </p>
+        </article>
+        <article class="csr-card">
+          <h3>社区与公益</h3>
+          <p>
+            结合自身业务特点参与社区建设与公益支持，鼓励员工参与
+            志愿服务，回馈经营所在地的社会环境。
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">FAQ</span>
+        <h2>关于金狮集团的常见问题</h2>
+        <p>以下问题来自访客了解企业集团时较为普遍的关注点。</p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq" open>
+          <summary>金狮集团是什么类型的企业？</summary>
+          <p>
+            从名称与常见用法看，金狮集团属于企业集团性质的组织，
+            通常以多元化业务布局为特征，通过多个板块协同经营。
+            具体业务构成、注册信息与经营范围，建议以官方渠道公布的内容为准。
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>集团一般包含哪些业务方向？</summary>
+          <p>
+            多元化集团常见的业务方向包括实业制造、商贸渠道、投资协同、
+            技术与数字化支持、运营服务以及组织与人才建设等。
+            不同集团的侧重点差异较大，需结合其实际公开信息判断。
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>如何与集团开展业务合作？</summary>
+          <p>
+            通常可通过官方公布的联系渠道提出合作意向，说明自身业务范围、
+            合作方向与预期目标，由对应业务部门进行评估与对接。
+            建议提前准备清晰的公司介绍与需求说明，提高沟通效率。
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>了解集团信息时应注意什么？</summary>
+          <p>
+            建议优先参考官方发布渠道与企业公开信息，对来源不明的
+            经营数据、排名或承诺保持谨慎。涉及投资、采购或签约等
+            重要决策时，应通过正式渠道核实对方主体资格与授权情况。
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>集团类企业通常如何管理多个业务板块？</summary>
+          <p>
+            常见做法是在集团层面建立统一的战略、财务与人力管理框架，
+            各业务板块在授权范围内独立运营，并通过内部协同机制
+            共享资源、控制风险，从而兼顾灵活性与整体一致性。
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-band">
+        <div>
+          <h2>合作与联系</h2>
+          <p>
+            如您希望就业务合作、供应对接或渠道共建等方向与集团沟通，
+            可通过正式渠道提交合作意向。我们建议在沟通中明确
+            合作方向、业务范围与预期目标，以便更快匹配到对应部门。
+          </p>
+        </div>
+        <ul class="contact-list">
+          <li><b>合作方向</b><span>业务对接、供应合作、渠道共建</span></li>
+          <li><b>沟通方式</b><span>通过官方公布渠道提交意向</span></li>
+          <li><b>准备材料</b><span>公司简介、业务说明、需求要点</span></li>
+          <li><b>注意事项</b><span>核实主体资格与授权信息</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>金狮集团</h4>
+        <p>
+          本页为企业信息概览页面，用于集中呈现集团概况、业务板块、
+          发展理念与社会责任等公开信息，方便访客快速了解。
+        </p>
+      </div>
+      <div>
+        <h4>集团信息</h4>
+        <ul>
+          <li><a href="#about">集团概况</a></li>
+          <li><a href="#business">业务板块</a></li>
+          <li><a href="#values">发展理念</a></li>
+          <li><a href="#history">发展脉络</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>责任与合作</h4>
+        <ul>
+          <li><a href="#csr">社会责任</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#contact">合作联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>信息说明</h4>
+        <ul>
+          <li>内容以公开信息为准</li>
+          <li>重要决策请核实主体</li>
+          <li>以官方渠道发布为准</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>金狮集团 · 企业信息概览</span>
+      <span>本页内容仅供参考，具体信息请以官方公布为准</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // 平滑滚动兼容处理：为不支持 scroll-behavior 的浏览器提供基础支持
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var id = this.getAttribute('href');
+      if (!id || id === '#') return;
+      var target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+
+</body>
+  </html>
